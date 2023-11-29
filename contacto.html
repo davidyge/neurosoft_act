@@ -72,8 +72,8 @@
 
    <!-- FONDO DE NOSOTROS FIN -->
 
-   <!-- Registration Start -->
-   <div class="container-fluid py-5" style="margin: 90px 0;" id="formulario">
+    <!-- Registration Start -->
+    <div class="container-fluid py-5" style="margin: 90px 0;" id="registro">
       <div class="container py-5">
 
           <div class="row align-items-center">
@@ -84,20 +84,20 @@
                        <h1 style="font-weight: bold; color:#154492; font-size: 35px; " class="m-0">REGISTRA TUS DATOS</h1>
                    </div>
                    <div style="background-color: #154492;" class="card-body rounded-bottom p-5">
-                       <form class="formulario" id="formulario">
+                       <form id="formulario4">
                         <div class="form-group">
-                           <input type="text" class="form-control border-0 p-4" placeholder="Nombre" id="nombre" name="nombre" required="required" />
+                           <input type="text" class="form-control border-0 p-4" placeholder="Nombre" id="nombre4" name="nombre4" required="required" />
                        </div>
                        <div class="form-group">
-                           <input type="tex" class="form-control border-0 p-4" placeholder="Ruc" id="ruc" name="ruc" required="required" />
+                           <input type="tex" class="form-control border-0 p-4" placeholder="Ruc" id="ruc4" name="ruc4" required="required" />
                        </div>
                        <div class="form-group">
-                          <input type="text" class="form-control border-0 p-4" placeholder="Telefono" id="telefono" name="telefono" required="required" />
+                          <input type="text" class="form-control border-0 p-4" placeholder="Telefono" id="telefono4" name="telefono4" required="required" />
                       </div>
 
                            <div>
-                               <button style="font-weight: bold; font-size: 25px;" class="btn btn-dark btn-block border-0 py-3" type="submit">Enviar</button>
-                               <div id="mensaje-exito" class="text-green font-bold mt-3"></div>
+                               <button style="font-weight: bold; font-size: 25px;" class="btn btn-dark btn-block border-0 py-3" type="button" onclick="enviarDatos('formulario4')">Enviar</button>
+                               <div style="text-align: center;" id="mensaje-exito-4" class="text-green font-bold mt-3"></div>
                               </div>
                        </form>
                    </div>

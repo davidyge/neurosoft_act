@@ -2400,6 +2400,44 @@ body{background-color:#f5f6fc;}
  
 /*fin de servicios*/
 
+/* MODDAL DE BOTON OFERTA INICIO*/
+.custom-modal-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #f8f9fa; /* Fondo del contenedor */
+     padding: 10px;
+   }
+   
+   #titulo_modal {
+     color: #154492;
+     margin: 0;
+     text-align: center;
+     font-size: 25px;
+   }
+   
+   .custom-close-btn {
+     color: #000000;
+     background-color: transparent;
+     border: none;
+     font-size: 20px;
+     cursor: pointer;
+     padding: 0;
+   }
+
+   .custom-close-btn:hover {
+     color: #ff0000;
+
+   }
+
+   .body_formulario{
+     background-color: #f3f2f2;
+     border-radius: 10px;
+   }
+/*MODEL DE BOTON OFERTA FINAL*/
+
+   
+
 
 
                                                             

@@ -82,20 +82,20 @@
                       <div style="background-color: #f3f2f2; " class="card-body p-5 text-center">
                         <h1 style="font-weight: bold; color:#000000; font-size: 30px;" class="m-0">¿Requieres información?</h1>
                         <h3 style="font-weight: bold; color:#726f6f; font-size: 18px;" class="m-0">Estas a un paso de cambiar tu negocio y aumentar la productividad en tu empresa</h3>
-                          <form class="formulario" id="formulario">
+                          <form id="formulario1">
                               <div class="form-group">
-                                  <input type="text" class="form-control border-0 p-4" placeholder="Nombre" id="nombre" name="nombre" required="required" />
+                                  <input type="text" class="form-control border-0 p-4" placeholder="Nombre" id="nombre1" name="nombre1" required="required" />
                               </div>
                               <div class="form-group">
-                                  <input type="tex" class="form-control border-0 p-4" placeholder="Ruc" id="ruc" name="ruc" required="required" />
+                                  <input type="tex" class="form-control border-0 p-4" placeholder="Ruc" id="ruc1" name="ruc1" required="required" />
                               </div>
                               <div class="form-group">
-                                 <input type="text" class="form-control border-0 p-4" placeholder="Telefono" id="telefono" name="telefono" required="required" />
+                                 <input type="text" class="form-control border-0 p-4" placeholder="Telefono" id="telefono1" name="telefono1" required="required" />
                              </div>
                              
                               <div>
-                                  <button class="btn btn-dark btn-block border-0 py-3" type="submit" id="boton_inicio">Enviar solicitud</button>
-                                  <div id="mensaje-exito" class="text-green font-bold mt-3"></div>
+                                  <button class="btn btn-dark btn-block border-0 py-3" type="button" id="boton_inicio" onclick="enviarDatos('formulario1')">Enviar solicitud</button>
+                                  <div id="mensaje-exito-1" class="text-green font-bold mt-3"></div>
                                  
                               </div>
                           </form>
@@ -425,54 +425,51 @@
                   </div>
                </div>
 
-           <div class="regitro_datos_modal"> 
+           
                <div class="row text-center ps-5 mt-5">
                   <div class="col-md-12 d-flex justify-content-center ">
-                     <button type="button" class="btn buy-button " data-bs-toggle="modal" data-bs-target="#form" data-bs-whatever="@mdo">COMPRAR AHORA</button>
+                     <button type="button" class="btn buy-button " data-bs-toggle="modal" data-bs-target="#form" >COMPRAR AHORA</button>
                   </div>
               </div>
 
-              <div class="modal fade" id="form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-
-                     <div class="modal-header">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-11">
-                                    <h1 style="color: #082557; font-size:20px;" class="modal-title fs-5 text-center" id="exampleModalLabel">GESTIÓN COMERCIAL Y FACTURACIÓN</h1>
-                                </div>
-                                <div class="col-1 text-end">
-                                    <button style="background-color: #ffffff; font-size:20px;" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="modal-body">
-                     <form class="formulario" id="formulario">
-                        <div class="form-group">
-                            <input type="text" class="form-control border-0 p-4" placeholder="Nombre" id="nombre" name="nombre" required="required" />
-                        </div>
-                        <div class="form-group">
-                            <input type="tex" class="form-control border-0 p-4" placeholder="Ruc" id="ruc" name="ruc" required="required" />
-                        </div>
-                        <div class="form-group">
-                           <input type="text" class="form-control border-0 p-4" placeholder="Telefono" id="telefono" name="telefono" required="required" />
-                       </div>
-                       
-                        <div>
-                            <button class="btn btn-dark btn-block border-0 py-3" type="submit" id="boton_inicio">Enviar solicitud</button>
-                            <div id="mensaje-exito" class="text-green font-bold mt-3"></div>
-                           
-                        </div>
-                    </form>
-                    </div>
-                    
+            <!-- Modal incio -->
+            <div class="modal fade" id="form" tabindex="-1" aria-labelledby="formLabel" aria-hidden="true">
+               <div class="modal-dialog">
+                  <div class="modal-content body_formulario">
+                     <div style="border-radius: 10px;" class="custom-modal-header">
+                        <h3 class="titulo_modal1" id="titulo_modal">GESTIÓN COMERCIAL Y FACTURACIÓN</h3>
+                        <button type="button" class="custom-close-btn" data-bs-dismiss="modal" aria-label="Close">X</button>
+                     </div>
+                     <h5 class="modal-title fs-5 mx-3 fs-5 text-muted text-center" id="formLabel">Estas a un paso de cambiar tu
+                        negocio y aumentar la productividad en tu empresa</h5>
+                     <div class="modal-body">
+                        <form id="formulario2">
+                           <div class="form-group">
+                              <input type="text" class="form-control border-0 p-4" placeholder="Nombre" id="nombre2" name="nombre2"
+                                 required="required" />
+                           </div>
+                           <div class="form-group">
+                              <input type="tex" class="form-control border-0 p-4" placeholder="Ruc" id="ruc2" name="ruc2"
+                                 required="required" />
+                           </div>
+                           <div class="form-group">
+                              <input type="text" class="form-control border-0 p-4" placeholder="Telefono" id="telefono2"
+                                 name="telefono2" required="required" />
+                           </div>
+            
+                           <div>
+                              <button class="btn btn-dark btn-block border-0 py-3" type="button" id="boton_inicio"
+                                 onclick="enviarDatos('formulario2')">Enviar solicitud</button>
+                              <div style="text-align: center;" id="mensaje-exito-2" class="text-green font-bold mt-3"></div>
+                           </div>
+                        </form>
+                     </div>
+            
                   </div>
-                </div>
-              </div>
+               </div>
             </div>
+            
+            <!-- Modal fin -->
 
 
            </div>
@@ -964,20 +961,20 @@
                           <h1 style="font-weight: bold; color:#154492; font-size: 35px; " class="m-0">REGISTRA TUS DATOS</h1>
                       </div>
                       <div style="background-color: #154492;" class="card-body rounded-bottom p-5">
-                          <form class="formulario" id="formulario">
+                          <form id="formulario3">
                            <div class="form-group">
-                              <input type="text" class="form-control border-0 p-4" placeholder="Nombre" id="nombre" name="nombre" required="required" />
+                              <input type="text" class="form-control border-0 p-4" placeholder="Nombre" id="nombre3" name="nombre3" required="required" />
                           </div>
                           <div class="form-group">
-                              <input type="tex" class="form-control border-0 p-4" placeholder="Ruc" id="ruc" name="ruc" required="required" />
+                              <input type="tex" class="form-control border-0 p-4" placeholder="Ruc" id="ruc3" name="ruc3" required="required" />
                           </div>
                           <div class="form-group">
-                             <input type="text" class="form-control border-0 p-4" placeholder="Telefono" id="telefono" name="telefono" required="required" />
+                             <input type="text" class="form-control border-0 p-4" placeholder="Telefono" id="telefono3" name="telefono3" required="required" />
                          </div>
 
                               <div>
-                                  <button style="font-weight: bold; font-size: 25px;" class="btn btn-dark btn-block border-0 py-3" type="submit">Enviar</button>
-                                  <div id="mensaje-exito" class="text-green font-bold mt-3"></div>
+                                  <button style="font-weight: bold; font-size: 25px;" class="btn btn-dark btn-block border-0 py-3" type="button" onclick="enviarDatos('formulario3')">Enviar</button>
+                                  <div style="text-align: center;" id="mensaje-exito-3" class="text-green font-bold mt-3"></div>
                                  </div>
                           </form>
                       </div>
