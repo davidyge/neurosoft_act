@@ -43,45 +43,122 @@
       <div class="loader"><img src="images/loading.gif" alt="#"/></div>
    </div>
    <!-- end loader -->
-   <!-- header -->
+ <!-- header -->
+ <header>
+   <div class="header fixed-top">
+      <div class="header">
+         <div class="header_to d_none">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                     <ul class="conta_icon">
+                        <li><a href="tel:+51954370221"><i class="fa fa-phone" aria-hidden="true"></i>+51 954370221</a> </li>
+                        <li style="margin-left:10px;"><a href="mailto:ventas@neurosystemperu.com"><i class="fa fa-envelope" aria-hidden="true"></i>
+                              ventas@neurosystemperu.com</a> </li>
+                     </ul>
 
-   <script>
-      fetch('header.html')
-        .then(response => response.text())
-        .then(headerHtml => {
-          document.body.innerHTML = headerHtml + document.body.innerHTML;
-        });
-    </script>
-   <!-- end header inner -->
-   <!-- end header -->
+                  </div>
+                  <div class="col-md-6 col-sm-6 ">
+                     <ul class="social_icon1">
+                        <li> Siguenos
+                        </li>
+                        <li> <a href="https://www.facebook.com/neurosoft.tech/"><i class="fa fa-facebook"
+                                 aria-hidden="true"></i>
+                           </a>
+                        </li>
+                        <li> <a href="https://www.youtube.com/@NeuroSoftPeru"><i class="fa fa fa-youtube"></i></a>
+                        </li>
+
+                        <li> <a href="https://www.facebook.com/neurosoft.tech/"><i class="fa fa-instagram"
+                                 aria-hidden="true"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="header_midil">
+
+            </div>
+         </div>
+
+
+         <nav class="menu">
+            <section class="menu__container">
+               <h1 class="menu__logo"><img src="images/logon.svg" alt="Logotipo" class="logo-img" width="62px"
+                     height="62px"></h1>
+
+               <ul class="menu__links">
+                  <li class="menu__item">
+                     <a href="index.html" class="menu__link">INICIO</a>
+                  </li>
+
+                  <li class="menu__item">
+                     <a href="nosotros.html" class="menu__link">NOSOTROS</a>
+                  </li>
+
+                  <li class="menu__item">
+                     <a href="service.html" class="menu__link">SERVICIOS</a>
+                  </li>
+
+                  <li class="menu__item">
+                     <a href="precios.html" class="menu__link">PRECIOS</a>
+                  </li>
+
+                  <li class="menu__item">
+                     <a href="contacto.html" class="menu__link">CONTACTO</a>
+                  </li>
+
+                  <!-- Botón de "Contactar" separado y centrado -->
+               
+
+                  <div class="centered-button">
+                     <button id="contact-btn"><a href="tel:+51954370221"
+                           class="menu__link2">SOPORTE</a></button>
+                  </div>
+
+               </ul>
+
+               <div class="menu__hamburguer">
+                  <img src="images/menu.svg" class="menu__img">
+               </div>
+
+            </section>
+
+         </nav>
+
+      </div>
+
+   </div>
+
+</header>
+<!-- end header -->
    <!-- ESPACIADO INICIO -->
-   <div style="width: 100%;height: 80px;"></div>
+   <div id="espacio_ini"></div>
    <!-- ESPACIADO FIN -->
    <!-- banner -->
    <section class="banner_main">
       <div class="container mt-5">
-         <div class="row ">
-            <div class="col-md-7 col-lg-7">
+         <div  class="row">
+            <div class="col-md-6 col-lg-6">
                <div class="text-bg">
                   <h1>Gestión comercial<br>y Facturación</h1>
                   <span>Para cualquier negocio con GARANTIA</span>
                   <p>Diseñada para impulsar el crecimiento de tu negocio,
-                     simplifica tus procesos diarios, gestiona clientes, productos
-                     y servicios de manera eficiente y emite facturas profesionales.</p>
+                     simplifica tus procesos diarios, gestiona clientes, productos, servicios de manera eficiente y emite facturas profesionales.</p>
 
                </div>
                
                <div class="texto text-center">
-                  <span style="color: yellow;" class="text-white border-bottom">CONTACTAR UN ASESOR</span>
-                  <a  target="_blank" href="https://api.whatsapp.com/send?phone=51954370221&text=Hola%20%F0%9F%91%8B%20%F0%9F%99%82%20necesito%20informaci%C3%B3n%20acerca%20del%20sistema%20de%20facturaci%C3%B3n%20%7C%7C%20%F0%9D%97%A1%F0%9D%97%B2%F0%9D%98%82%F0%9D%97%BF%F0%9D%97%BC%F0%9D%97%A6%F0%9D%97%BC%F0%9D%97%B3%F0%9D%98%81%20%7C%7C" style="margin-left: 15px;" class="btn btn-warning btn-lg text-white font-weight-bold">Más información</a>
+                  <span class="text-white border-bottom">CONTACTAR UN ASESOR</span>
+                  <a id="btn_masInfomacion" target="_blank" href="https://api.whatsapp.com/send?phone=51954370221&text=Hola%20%F0%9F%91%8B%20%F0%9F%99%82%20necesito%20informaci%C3%B3n%20acerca%20del%20sistema%20de%20facturaci%C3%B3n%20%7C%7C%20%F0%9D%97%A1%F0%9D%97%B2%F0%9D%98%82%F0%9D%97%BF%F0%9D%97%BC%F0%9D%97%A6%F0%9D%97%BC%F0%9D%97%B3%F0%9D%98%81%20%7C%7C" class="btn btn-warning btn-lg text-white font-weight-bold">Más información</a>
                </div>
             </div>
-            
-               <div style="margin-bottom: 10px;" class="col-md-5 col-lg-5 mt-4" >
-                                       
-                      <div style="background-color: #f3f2f2; " class="card-body p-5 text-center">
-                        <h1 style="font-weight: bold; color:#000000; font-size: 30px;" class="m-0">¿Requieres información?</h1>
-                        <h3 style="font-weight: bold; color:#726f6f; font-size: 18px;" class="m-0">Estas a un paso de cambiar tu negocio y aumentar la productividad en tu empresa</h3>
+               
+               <div class="form_banner col-md-5 col-lg-5 mt-4" >                                       
+                      <div class="card-body_2 p-5 text-center">
+                        <h1 id="card-body_2_h1">¿Requieres información?</h1>
+                        <h3 id="card-body_2_h3">Estas a un paso de cambiar tu negocio y aumentar la productividad en tu empresa</h3>
                           <form id="formulario1">
                               <div class="form-group">
                                   <input type="text" class="form-control border-0 p-4" placeholder="Nombre" id="nombre1" name="nombre1" required="required" />
@@ -99,12 +176,13 @@
                                  
                               </div>
                           </form>
+
                       </div>
-                  
               </div>
 
-            
-         </div>
+               <img src="images/indicar_p.webp" alt="Imagen de asesora de ventas" id="img-fluido" class="img-fluid d-none d-lg-block">
+         
+            </div>
       </div>
    </section>
 
@@ -428,50 +506,11 @@
            
                <div class="row text-center ps-5 mt-5">
                   <div class="col-md-12 d-flex justify-content-center ">
-                     <button type="button" class="btn buy-button " data-bs-toggle="modal" data-bs-target="#form" >COMPRAR AHORA</button>
+                     <a type="button" class="btn buy-button " target="_blank" href="https://api.whatsapp.com/send?phone=51954370221&text=Hola%20%F0%9F%91%8B%20%F0%9F%99%82%20necesito%20informaci%C3%B3n%20acerca%20del%20sistema%20de%20facturaci%C3%B3n%20%7C%7C%20%F0%9D%97%A1%F0%9D%97%B2%F0%9D%98%82%F0%9D%97%BF%F0%9D%97%BC%F0%9D%97%A6%F0%9D%97%BC%F0%9D%97%B3%F0%9D%98%81%20%7C%7C" >COMPRAR AHORA</a>
                   </div>
               </div>
 
-            <!-- Modal incio -->
-            <div class="modal fade" id="form" tabindex="-1" aria-labelledby="formLabel" aria-hidden="true">
-               <div class="modal-dialog">
-                  <div class="modal-content body_formulario">
-                     <div style="border-radius: 10px;" class="custom-modal-header">
-                        <h3 class="titulo_modal1" id="titulo_modal">GESTIÓN COMERCIAL Y FACTURACIÓN</h3>
-                        <button type="button" class="custom-close-btn" data-bs-dismiss="modal" aria-label="Close">X</button>
-                     </div>
-                     <h5 class="modal-title fs-5 mx-3 fs-5 text-muted text-center" id="formLabel">Estas a un paso de cambiar tu
-                        negocio y aumentar la productividad en tu empresa</h5>
-                     <div class="modal-body">
-                        <form id="formulario2">
-                           <div class="form-group">
-                              <input type="text" class="form-control border-0 p-4" placeholder="Nombre" id="nombre2" name="nombre2"
-                                 required="required" />
-                           </div>
-                           <div class="form-group">
-                              <input type="tex" class="form-control border-0 p-4" placeholder="Ruc" id="ruc2" name="ruc2"
-                                 required="required" />
-                           </div>
-                           <div class="form-group">
-                              <input type="text" class="form-control border-0 p-4" placeholder="Telefono" id="telefono2"
-                                 name="telefono2" required="required" />
-                           </div>
             
-                           <div>
-                              <button class="btn btn-dark btn-block border-0 py-3" type="button" id="boton_inicio"
-                                 onclick="enviarDatos('formulario2')">Enviar solicitud</button>
-                              <div style="text-align: center;" id="mensaje-exito-2" class="text-green font-bold mt-3"></div>
-                           </div>
-                        </form>
-                     </div>
-            
-                  </div>
-               </div>
-            </div>
-            
-            <!-- Modal fin -->
-
-
            </div>
        </div>
    </div>
@@ -501,7 +540,7 @@
                   </ul>
                   <p>Con más de 1900 afiliados que ya han experimentado la transformación, te ofrecemos una solución integral para simplificar y agilizar tus procesos de facturación. </p>
                      <span class="try">COTIZAR CON UN ASESOR</span>
-                  <a class="read_morea" href="#">CONTACTAR<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                  <a class="read_morea" target="_blank" href="https://api.whatsapp.com/send?phone=51954370221&text=Hola%20%F0%9F%91%8B%20%F0%9F%99%82%20necesito%20informaci%C3%B3n%20acerca%20del%20sistema%20de%20facturaci%C3%B3n%20%7C%7C%20%F0%9D%97%A1%F0%9D%97%B2%F0%9D%98%82%F0%9D%97%BF%F0%9D%97%BC%F0%9D%97%A6%F0%9D%97%BC%F0%9D%97%B3%F0%9D%98%81%20%7C%7C">CONTACTAR<i class="fa fa-angle-right" aria-hidden="true"></i></a>
                </div>
              
             </div>
@@ -609,7 +648,7 @@
           
              <div class=" py-0 px-md-5">
                <div style="height: 370px; width: 370px;" class="portfolio_img">
-                  <img src="images/GARANTIA.webp" alt="#" />
+                  <img  src="images/GARANTIA.webp" alt="imagen de garantia" height="370px" width="370px"  />
                </div>
              </div>
            
@@ -815,7 +854,7 @@
                                        <span class="month">/MES</span>
                                    </span>
                                    <ul>
-                                    <li><span>S/2500 ANUAL</span></li>
+                                    <li><span>S/3000 ANUAL</span></li>
                                  </ul>
                                </div>
                                <!--//PRICE END-->
@@ -844,7 +883,7 @@
                            
                            <!--BUTTON START-->
                            <div class="generic_price_btn clearfix">
-                              <a class="" href="#registro_f">Comprar</a>
+                              <a class="" target="_blank" href="https://secure.micuentaweb.pe/t/r0nx0lvu">Comprar</a>
                            </div>
                            <!--//BUTTON END-->
                            
@@ -958,23 +997,23 @@
                <div class="col-lg-6" id="card_todo">
                   <div class="card border-3" >
                       <div class="card-header bg-light text-center">
-                          <h1 style="font-weight: bold; color:#154492; font-size: 35px; " class="m-0">REGISTRA TUS DATOS</h1>
+                          <h1 style="font-weight: bold; color:#154492; font-size: 35px;" class="m-0">REGISTRA TUS DATOS</h1>
                       </div>
                       <div style="background-color: #154492;" class="card-body rounded-bottom p-5">
-                          <form id="formulario3">
+                          <form id="formulario2">
                            <div class="form-group">
-                              <input type="text" class="form-control border-0 p-4" placeholder="Nombre" id="nombre3" name="nombre3" required="required" />
+                              <input type="text" class="form-control border-0 p-4" placeholder="Nombre" id="nombre2" name="nombre2" required="required" />
                           </div>
                           <div class="form-group">
-                              <input type="tex" class="form-control border-0 p-4" placeholder="Ruc" id="ruc3" name="ruc3" required="required" />
+                              <input type="tex" class="form-control border-0 p-4" placeholder="Ruc" id="ruc2" name="ruc2" required="required" />
                           </div>
                           <div class="form-group">
-                             <input type="text" class="form-control border-0 p-4" placeholder="Telefono" id="telefono3" name="telefono3" required="required" />
+                             <input type="text" class="form-control border-0 p-4" placeholder="Telefono" id="telefono2" name="telefono2" required="required" />
                          </div>
 
                               <div>
-                                  <button style="font-weight: bold; font-size: 25px;" class="btn btn-dark btn-block border-0 py-3" type="button" onclick="enviarDatos('formulario3')">Enviar</button>
-                                  <div style="text-align: center;" id="mensaje-exito-3" class="text-green font-bold mt-3"></div>
+                                  <button style="font-weight: bold; font-size: 25px;" class="btn btn-dark btn-block border-0 py-3" type="button" onclick="enviarDatos('formulario2')">Enviar</button>
+                                  <div style="text-align: center;" id="mensaje-exito-2" class="text-green font-bold mt-3"></div>
                                  </div>
                           </form>
                       </div>
@@ -1031,23 +1070,23 @@
                </div>
                <div class="col-lg-3 col-md-6 col-sm-6">
                   <h3>Soluciones</h3>
-                  <ul class="link_icon">
+                  <ul class="link_icon text-white">
                      
                      <li>
-                        <a href="about.html">
+                        <a >
                            </i>Factura Electronica
                      </li>
-                     <li> <a href="service.html"> </i>Services</a></li>
-                     <li> <a href="team.html"></i>Desarrollos a medida</a></li>
-                     <li> <a href="client.html"></i>Negocio</a></li>
-                     <li> <a href="contact.html"></i>Registro e importación de productos</a></li>
+                     <li> <a> </i>Services</a></li>
+                     <li> <a></i>Desarrollos a medida</a></li>
+                     <li> <a></i>Negocio</a></li>
+                     <li> <a></i>Registro e importación de productos</a></li>
                   </ul>
                </div>
                <div class="col-lg-4 col-md-6 col-sm-6">
                   <h3>Contáctenos</h3>
                   <ul class="link_icon text-white">
-                     <li> <a class="fa fa-volume-control-phone" > 964035352</a></li>
-                     <li> <a  class="fa fa-envelope" > ventas@neurosystemperu.com </a></li>
+                     <li> <a class="fa fa-volume-control-phone" href="tel:+51954370221"> 954370221</a></li>
+                     <li> <a  class="fa fa-envelope" href="mailto:ventas@neurosystemperu.com"> ventas@neurosystemperu.com </a></li>
                      <li> <a  class="fa fa-map-marker"> Huánuco: Jr. 28 de Julio 313</a></li>
                      <li> <a  class="fa fa-map-marker"> Pucallpa: Jr. TARAPACA 896</a></li>
                      
@@ -1079,6 +1118,8 @@
    <script src="js/custom.js"></script>
 
    <!-- Scroll ocultar cabecera -->
+   <script src="js/app.js"></script>
+
    <script src="js/script.js"></script>
    <script src="js/formulario.js"></script>
    <script src="js/carrucel.js" defer></script> 

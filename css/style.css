@@ -9,6 +9,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,400,600,700,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
 /*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
  2) font-family: 'Poppins', sans-serif;
  ----------------------------------------*****/
@@ -31,6 +33,8 @@
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
 * {
+     margin: 0;
+    padding: 0;
      box-sizing: border-box !important;
 }
 
@@ -39,8 +43,12 @@ html {
      overflow-x: hidden;
 }
 
-body {
-    
+#espacio_ini{
+     width: 100%;
+     height: 80px;
+}
+
+body { 
      background: #fff;
      color: #090909;
      font-size: 14px;
@@ -50,6 +58,8 @@ body {
      align-items: center;
      justify-content: center;
      overflow-x: hidden;
+
+     font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -228,6 +238,250 @@ button {
 
 /**-- heading section --**/
 
+/* HEADER TO BUTTONS OF INTERACTIVE  START */
+
+.menu{
+     background-color: #ca0805;
+     color: #fff;
+     height: 80px;
+ }
+ 
+ .menu__container{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 90%;
+     max-width: 1200px;
+     height: 100%;
+     margin: 0 auto;
+ }
+ 
+ .menu__links{
+     height: 100%;
+     transition: transform .5s;
+     display: flex;
+ }
+ 
+ .menu__item{
+     list-style: none;
+     position: relative;
+     height: 100%;
+     --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+     --transform: rotate(-90deg);
+ }
+ 
+ .menu__item:hover{
+     --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+     --transform: rotate(0);
+ }
+ 
+ .menu__link{
+     color: #ffffff;
+     text-decoration: none;
+     padding: 0 30px;
+     display: flex;
+     height: 100%;
+     align-items: center;   
+     font-size: 18px;
+ }
+ 
+ .menu__link:hover{
+     background-color: #ffffff;
+     color: #000;
+     border-radius: 5px;
+ }
+ 
+ 
+ .menu__arrow{
+     transform: var(--transform);
+     transition: transform .3s;
+     display: block;
+     margin-left: 3px;
+ }
+ 
+ .menu__nesting{
+     list-style: none;
+     transition:clip-path .3s;
+     clip-path: var(--clip);
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     width: max-content;
+     transform: translateY(100%);
+     background-color: #000;
+ }
+ 
+ .menu__link--inside{
+     padding: 30px 100px 30px 20px;
+ }
+ 
+ .menu__link--inside:hover{
+     background-color: #798499;
+ }
+ 
+ .menu__hamburguer{
+     height: 100%;
+     display: flex;
+     align-items: center;
+     padding: 0 15px;
+     cursor: pointer;
+     display: none;
+ }
+ 
+ .menu__img{
+     display: block;
+     width: 36px;
+ }
+ 
+ @media (max-width:800px){
+     .menu__hamburguer{
+         display: flex;
+     }
+ 
+     .menu__item{
+         --clip:0;
+         overflow:hidden ;
+     }
+ 
+     .menu__item--active{
+         --transform: rotate(0);
+         --background: #5e7094;
+     }
+ 
+     .menu__item--show{
+         background-color: var(--background);
+     }
+ 
+ /*MENU CELL FONDO*/
+     .menu__links{
+         position: fixed;
+         max-width: 400px;
+         width: 100%;
+         top: 70px;
+         bottom: 0;
+         right: 0;
+         background-color: rgb(255, 255, 255);  /* Corregir el formato del color */
+         overflow-y: auto;
+         display: grid;
+         grid-auto-rows: max-content;
+         transform: translateX(100%);
+     }
+     .menu__item {
+          border-bottom: 1px solid #ca0805; /* Añadir una línea blanca entre elementos del menú */
+          padding: 10px 0; /* Añadir espacio alrededor de cada elemento del menú */
+      }
+ 
+     .menu__links--show{
+         transform: unset;
+         width: 100%;
+     }
+ 
+     .menu__link{
+         padding: 25px 0;
+         padding-left: 30px;
+         height: auto;
+     }
+
+ 
+     .menu__arrow{
+         margin-left: auto;
+         margin-right: 20px;
+     }
+ 
+     .menu__nesting{
+         display: grid;
+         position: unset;
+         width: 100%;
+         transform: translateY(0);
+         height: 0;
+         transition: height .3s;
+     }
+ 
+     .menu__link--inside{
+         width: 90%;
+         margin-left: auto;
+         border-left: 1px solid #798499;
+     }
+
+     .menu__link{
+          color: #ca0805;
+          text-decoration: none;
+          padding: 0 30px;
+          display: flex;
+          height: 100%;
+          align-items: center;   
+          font-size: 18px;
+          font-weight: 500; /* Grosor mediano del texto */
+      }
+
+      .menu__link2{
+          color: #ffffff;
+          text-decoration: none;
+          padding: 0 30px;
+          display: flex;
+          height: 100%;
+          align-items: center;   
+          font-size: 18px;
+      }
+
+      
+      .centered-button {
+          text-align: center;
+          margin-top: 30px; /* Ajusta según sea necesario */
+      }
+      
+      #contact-btn {
+          background-color: #ca0805; /* Color del botón */
+          padding: 10px 15px; /* Ajusta según sea necesario */
+          border: 1px solid #ca5705; /* Borde del botón */
+          border-radius: 5px; /* Bordes redondeados */
+          text-decoration: none;
+          
+      }
+
+ }
+
+
+ .menu__link2{
+     color: #ffffff;
+     text-decoration: none;
+     padding: 0 30px;
+     display: flex;
+     height: 100%;
+     align-items: center;   
+     font-size: 20px;
+     margin-top: 9px;
+ }
+
+ .menu__link2:hover{
+     color: #000000;
+     padding: 15px 15;
+     font-weight: 600;
+     background-color: #ffffff;
+     border-radius: 5px;
+ }
+ .centered-button {
+     text-align: center;
+     margin-top: 7px; /* Ajusta según sea necesario */
+     display: block; /* Muestra el botón en pantallas grandes */
+ }
+ 
+ #contact-btn {
+     background-color: #ca0805; /* Color del botón */
+     padding-left: 5px;
+     padding-right: 5px;
+     padding-bottom: 5px;
+     padding-top: 5px;
+     border-radius: 5px; /* Bordes redondeados */
+     text-decoration: none;
+     font-weight: 500;
+     margin-left: 2px;
+ }
+
+
+
+
+/* HEADER TO BUTTONS OF INTERACTIVE  END */
 
 /*---------------------------- preloader area ----------------------------*/
 
@@ -402,7 +656,7 @@ ul.social_icon1 li:last-child {
 .header_midil {
      background-color: #dddddd;
      width: 100%;
-     padding: 25.4px 0;
+     padding: 0.5px 0;
 }
 
 .logo {
@@ -548,13 +802,16 @@ ul.sign li a i {
      width: 100%;
      text-align: center;
      border-radius: 10px;
-     padding: 6px 0;
+     padding: 10px 12px;
      font-weight: 600;
      text-transform: uppercase;
+     margin-top: 10px;
+     
 }
 
 .sign_btn:hover {
      background-color: #000;
+     color: #ffffff;
 }
 
 
@@ -566,7 +823,7 @@ ul.sign li a i {
 
 /* FIN DE INICIO DIMENSION DE NAVBAR*/
 
-/** banner section **/
+/** banner section INICIO **/
 
 .banner_main {
      padding: 60px 0 0px 0;
@@ -604,37 +861,25 @@ ul.sign li a i {
      font-size: 17px;
 }
 
-.text-bg a {
-     font-size: 25px;
-     color: #ffff00;
-     font-weight: 600;
-     text-align: left;
-     display: inline-block;
-     transition: ease-in all 0.5s;
+#btn_masInfomacion{
+     margin-left: 15px;
+}
+
+.form_banner{
+     margin-bottom: 10px; 
      position: relative;
-     line-height: 1px;
 }
 
-.text-bg a::before {
-     position: absolute;
-     content: "";
-     top: 3px;
-     border-right: #ffff00 solid 1px;
-     border-width: 90px;
-     height: 1px;
-     right: -111px;
+.card-body_2{ 
+     background-color: #f3f2f2;
+     border-radius: 10px;
 }
-
-.text-bg a:hover {
-     color: #fffffb;
-     transition: ease-in all 0.5s;
-     transform: scale(1.1);
+#card-body_2_h1{
+     font-weight: bold; color:#000000; font-size: 30px;
 }
-
-.ban_img figure {
-     margin: 0;
+#card-body_2_h3{
+     font-weight: bold; color:#726f6f; font-size: 18px;
 }
-
 
 #boton_inicio{
      font-weight: bold;
@@ -647,6 +892,14 @@ ul.sign li a i {
      font-size: 20px;
      background-color: #3060ad;
 }
+
+#img-fluido{ /* Definir el tamaño de la imagen y absolute para flotar sobre el banner solo en pantalla grande se visualiza*/
+     width: 500px;
+     height: 610px; 
+     position: absolute; 
+     margin-left: 1350px;
+}
+
 
 
 /** end banner section **/
@@ -907,7 +1160,7 @@ ul.sign li a i {
 
    .service_bg {
      padding: 60px 0 0px 0;
-     background: url(../images/bg_service.png);
+     background: url(../images/bg_service.webp);
      background-size: 100% 100%;
      background-repeat: no-repeat;
 }
@@ -1766,7 +2019,7 @@ height: 100%;
      padding-top: 80px;
 }
 .cronometro{
-    background: url(../images/fondox.png);
+    background: url(../images/fondo_oferta.webp);
     padding-top: 80px;
 }
 
@@ -2397,6 +2650,7 @@ body{background-color:#f5f6fc;}
 
 
 /*inicio de servicios*/
+
  
 /*fin de servicios*/
 
@@ -2435,9 +2689,4 @@ body{background-color:#f5f6fc;}
      border-radius: 10px;
    }
 /*MODEL DE BOTON OFERTA FINAL*/
-
-   
-
-
-
                                                             
